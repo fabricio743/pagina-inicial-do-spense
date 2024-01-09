@@ -5,3 +5,168 @@
     --Roboto: 'Roboto', sans-serif;
     --Roboto-Mono: 'Roboto Mono', monospace;
 }
+
+html, body{
+    padding: 0%;
+    margin: 0%;
+    font-family: var(--Cabin);
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/*TOPO DO SITE*/
+header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #F0EEEB;
+}
+/*PRIMEIRA PARTE DO HEADER*/
+header > .anuncio{
+    width: 100%;
+    height: 30%;
+    text-align: center ;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+/*SEGUNDA PARTE DO HEADER*/
+header > .cabeçalho{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > .cabeçalho > h1{
+    margin-left: 12%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.283);
+}
+/*PRIMEIRA PARTE DO CABEÇALHO*/
+header > .cabeçalho > .cabeçalho-meio{
+    
+}
+header > .cabeçalho > .cabeçalho-meio > a{
+    color: black;
+    font-size: 22px;
+    margin: 10px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.283);
+}
+header > .cabeçalho >.cabeçalho-meio > a:hover{
+    color: rgb(201, 33, 33);
+    font-size: 20px;
+}
+/*SEGUNDA PARTE DO CABEÇALHO*/
+header > .cabeçalho > .cabeçalho-login{
+    margin-right: 10%;
+}
+header > .cabeçalho > .cabeçalho-login> a{
+    color: black;
+    margin: 5px;
+    font-size: 22px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.283);
+}
+header > .cabeçalho >.cabeçalho-login > a:hover{
+    color: rgb(201, 33, 33);
+}
+/*BOTÃO DE STARTED*/
+header > .cabeçalho > .cabeçalho-login > #getstart{
+    color: white;
+    padding: 13px;
+    border-radius: 5%;
+    background-color: black;
+}
+/*PRIMEIRA PARTE DO CONTEUDO DO SITE*/
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+/*PARTE CAIXA1*/
+.caixa1{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 60px;
+    align-items: center;
+    background-color: #F0EEEB;
+}
+/*PRIMEIRA PARTE DA PRIMEIRA CAIXA*/
+.caixa1 > #sub-caixa1{
+    width: 45%;
+    height: 100%;
+    text-align: left;
+    padding-left: 10%;
+}
+.caixa1 > #sub-caixa1 > h1{
+    font-size: 3.3em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.166);
+}
+.caixa1 > #sub-caixa1 > #mid-p{
+    color: #5B5545;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.166);
+}
+.caixa1 > #sub-caixa1 > article{
+    display: flex;
+    align-items: center;
+}
+.caixa1 > #sub-caixa1 > article > p{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.166);
+}
+.caixa1 > #sub-caixa1 > article > img{ 
+    margin-right: 15px;
+}
+.caixa1 > #sub-caixa1 > form > p > input{
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+    background-color: black;
+}
+.caixa1 > #sub-caixa1 > form > p > #iemail{
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+/*SEGUNDA PARTE DA PRIMEIRA CAIXA*/
+.caixa1 > #sub-caixa2{
+    width: 40%;
+    height: 100%;
+}
+.caixa1 > #sub-caixa2 > img{
+    width: 75%;
+    height: 600px;
+    margin-left: 12%;
+}
+/*PARTE CAIXA2*/
+.caixa2{
+    width: 100%;
+    
+    background-color: rgba(165, 42, 42, 0);
+    justify-content: center;
+
+}
+.caixa2 > section{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.caixa2 > section > a{
+    margin: 20px 10px;
+}
+.caixa2 > section > a > img{
+    width: 100%;
+    height: 30px;
+    
+}
