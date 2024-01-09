@@ -47,8 +47,7 @@ header > .cabeçalho > h1{
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.283);
 }
 /*PRIMEIRA PARTE DO CABEÇALHO*/
-header > .cabeçalho > .cabeçalho-meio{
-    
+header > .cabeçalho > .cabeçalho-meio{   
 }
 header > .cabeçalho > .cabeçalho-meio > a{
     color: black;
@@ -90,6 +89,7 @@ main{
     flex-flow: column nowrap;
     
 }
+
 /*PARTE CAIXA1*/
 .caixa1{
     width: 100%;
@@ -136,6 +136,7 @@ main{
     text-align: center;
     padding: 15px 10px;
     border-radius: 5px;
+    color: black;
     background-color: white;
 }
 /*SEGUNDA PARTE DA PRIMEIRA CAIXA*/
@@ -148,25 +149,65 @@ main{
     height: 600px;
     margin-left: 12%;
 }
+
 /*PARTE CAIXA2*/
 .caixa2{
     width: 100%;
-    
-    background-color: rgba(165, 42, 42, 0);
+    display: flex;
     justify-content: center;
-
 }
 .caixa2 > section{
-    width: 100%;
+    width: 83%;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 .caixa2 > section > a{
-    margin: 20px 10px;
+    margin: 20px ;   
 }
 .caixa2 > section > a > img{
     width: 100%;
     height: 30px;
     
 }
+
+/*PARTE CAIXA3*/
+.caixa3{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caixa3 > .subcaixa3{
+    width: 86%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(img/Phone\ Mockup\ \(Desktop\).png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: #5757571b;
+}
+.caixa3 > .subcaixa3 > .subcaixa4{
+    margin-left: 100px;
+}
+.caixa3 > .subcaixa3 > .subcaixa4 > h1{
+    margin: 0%;
+    font-size: 3.0em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.166);
+}
+.caixa3 > .subcaixa3 > .subcaixa4 > p{
+    color: #5B5545;
+    font-size: 24px;
+    margin: 10px;
+}
+.caixa3 > .subcaixa3 > .subcaixa4 > a{
+    font-size: 30px;
+    color: black;
+}
+.caixa3 > .subcaixa3 > .subcaixa4 > a:hover{
+    font-size: 30px;
+    color: rgb(122, 122, 122);
+}
+
