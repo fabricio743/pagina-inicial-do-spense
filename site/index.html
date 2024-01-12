@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página inicial do Spense</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--ANUNCIO-->
+    <div class="anuncio">
+            <p>🎉 To celebrate Spense´s launch, we will be waiving all fees for the entire month of April. You will be receiving 100% of the earnigs.🎉</p>
+    </div>
     <!--TOPO DO SITE-->
     <header>
-        <!--ANUNCIO-->
-        <div class="anuncio">
-            <p>🎉 To celebrate Spense´s launch, we will be waiving all fees for the entire month of April. You will be receiving 100% of the earnigs.🎉</p>
-        </div>
         <!--HEADER DO SITE-->
         <div class="cabeçalho">
             <h1>spense.</h1> 
-            <div class="cabeçalho-meio">
-                <a href="#">Business</a>
-                <a href="#">Pricing</a>
-                <a href="#">Features</a>
-            </div>
-            <div class="cabeçalho-login">
-                <a href="#">Login</a>
-                <a id="getstart" href="#">Get Started</a>
-            </div>
+
+            <menu>
+                <ul class="cabeçalho-meio">
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Features</a></li>
+                    
+                </ul>
+                <ul class="cabeçalho-login">
+                    <li><a href="#">Login</a></li>
+                    <li><a id="getstart" href="#">Get Started</a></li>
+                </ul>
+            </menu>
         </div>
     </header>
     <!--MEIO DO SITE-->
@@ -66,7 +71,7 @@
             <div id="sub-caixa2">
                 <picture>
                     <source media="(max-width: 1440px)" srcset="img/Hero-Tablet.png" type="image/png">
-
+                    <source media="(max-width: 700px)" srcset="img/Hero(Mobile).png" type="image/png">
                     <img src="img/Hero Image (Desktop).png" alt="foto">
                 </picture>
                 

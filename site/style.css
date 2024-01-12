@@ -5,6 +5,7 @@
     --Roboto: 'Roboto', sans-serif;
     --Roboto-Mono: 'Roboto Mono', monospace;
     --COLORHOVER: rgb(201, 33, 33);
+    --COLORFUNDO: #F0EEEB;
 }
 
 html, body{
@@ -19,72 +20,100 @@ body{
     flex-flow: column nowrap;
 }
 
-/*TOPO DO SITE*/
-header{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-flow: column nowrap;
-    background-color: #F0EEEB;
-}
 /*PRIMEIRA PARTE DO HEADER*/
-header > .anuncio{
+.anuncio{
     width: 100%;
     height: 30%;
     text-align: center ;
     color: white;
     background-color: rgb(0, 0, 0);
 }
-header > .anuncio > p{
+.anuncio > p{
     margin: 10px;
+}
+/*TOPO DO SITE*/
+header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--COLORFUNDO);
 }
 /*SEGUNDA PARTE DO HEADER*/
 header > .cabeçalho{
     width: 100%;
     height: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between ;
     align-items: center;
 }
 header > .cabeçalho > h1{
     margin-left: 12%;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.283);
 }
-/*PRIMEIRA PARTE DO CABEÇALHO*/
-header > .cabeçalho > .cabeçalho-meio{   
+header > .cabeçalho > menu{
+    display: flex;
+    width: 65vw;
+    justify-content:space-around ;
 }
-header > .cabeçalho > .cabeçalho-meio > a{
+header > .cabeçalho > menu > ul{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
+li > a{
+    display: block;
     color: black;
     font-size: 22px;
     margin: 10px;
     text-decoration: none;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.283);
 }
-header > .cabeçalho >.cabeçalho-meio > a:hover{
+li > a:hover{
     color: var(--COLORHOVER);
     font-size: 20px;
 }
-/*SEGUNDA PARTE DO CABEÇALHO*/
-header > .cabeçalho > .cabeçalho-login{
+
+/*PRIMEIRA PARTE DO CABEÇALHO*/
+header > .cabeçalho > menu > .cabeçalho-meio{
+    display: flex;
     margin-right: 10%;
 }
-header > .cabeçalho > .cabeçalho-login> a{
+
+/*SEGUNDA PARTE DO CABEÇALHO*/
+header > .cabeçalho > menu >  .cabeçalho-login{
+    display: flex;
+    margin-right: 10%;
+}
+header > .cabeçalho > menu >  .cabeçalho-login> a{
     color: black;
     margin: 5px;
     font-size: 22px;
     text-decoration: none;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.283);
 }
-header > .cabeçalho >.cabeçalho-login > a:hover{
+header > .cabeçalho > menu > .cabeçalho-login > a:hover{
     color: var(--COLORHOVER);
 }
 /*BOTÃO DE STARTED*/
-header > .cabeçalho > .cabeçalho-login > #getstart{
+header > .cabeçalho > menu > .cabeçalho-login > li > a#getstart{
+    width: 120px;
     color: white;
-    padding: 13px;
+    padding: 18px;
     border-radius: 5%;
+    text-align: center;
     background-color: black;
 }
+header > .cabeçalho > menu > .cabeçalho-login > li > a#getstart:hover{
+    color: white;
+    font-size: 22px;
+    background-color: rgba(103, 103, 103, 0.547);
+}
+/*938*/
 /*PRIMEIRA PARTE DO CONTEUDO DO SITE*/
 main{
     width: 100%;
@@ -101,7 +130,7 @@ main{
     flex-wrap: nowrap;
     padding-bottom: 60px;
     align-items: center;
-    background-color: #F0EEEB;
+    background-color: var(--COLORFUNDO);
 }
 /*PRIMEIRA PARTE DA PRIMEIRA CAIXA*/
 .caixa1 > #sub-caixa1{
