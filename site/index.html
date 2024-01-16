@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Página inicial do Spense</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,26 +12,41 @@
     <div class="anuncio">
             <p>🎉 To celebrate Spense´s launch, we will be waiving all fees for the entire month of April. You will be receiving 100% of the earnigs.🎉</p>
     </div>
-    <!--TOPO DO SITE-->
+    <!--HEADER SECUNDARIO-->
     <header>
-        <!--HEADER DO SITE-->
-        <div class="cabeçalho">
-            <h1>spense.</h1> 
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Spence.</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Business</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Get Started</a></button>
+            </div>
 
-            <menu>
-                <ul class="cabeçalho-meio">
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Features</a></li>
-                    
-                </ul>
-                <ul class="cabeçalho-login">
-                    <li><a href="#">Login</a></li>
-                    <li><a id="getstart" href="#">Get Started</a></li>
-                </ul>
-            </menu>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Get Started</a></button>
+            </div>
         </div>
     </header>
+
+    <script src="assets/js/script.js"></script>
     <!--MEIO DO SITE-->
     <main>
         <div class="caixa1">
@@ -83,11 +98,11 @@
                 <a href="#"> <img src="img/Facebook Logo.png" alt="logo de site"></a>
                 <a href="#"> <img src="img/Dribbble Logo.png" alt="logo de site"></a>
                 <a href="#"> <img src="img/Youtube Logo.png" alt="logo de site"></a>
-                <a href="#"> <img src="img/Pinterest Logo.png" alt="logo de site"></a>
-                <a href="#"> <img src="img/Twitter Logo.png" alt="logo de site"></a>
-                <a href="#"> <img src="img/Reddit Logo.png" alt="logo de site"></a>
-                <a href="#"> <img src="img/Google Logo.png" alt="logo de site"></a>
-                <a href="#"> <img src="img/Slack Logo.png" alt="logo de site"></a>
+                <a href="#" class="celular"> <img src="img/Pinterest Logo.png" alt="logo de site"></a>
+                <a href="#" class="celular"> <img src="img/Twitter Logo.png" alt="logo de site"></a>
+                <a href="#" class="tablea"> <img src="img/Reddit Logo.png" alt="logo de site"></a>
+                <a href="#" class="tablea"> <img src="img/Google Logo.png" alt="logo de site"></a>
+                <a href="#" class="tablea"> <img src="img/Slack Logo.png" alt="logo de site"></a>
             </section>
         </div>
 

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 :root{
     --Cabin: 'Cabin', sans-serif;
     --Roboto: 'Roboto', sans-serif;
@@ -7,7 +7,6 @@
     --COLORHOVER: rgb(201, 33, 33);
     --COLORFUNDO: #F0EEEB;
 }
-
 html, body{
     padding: 0%;
     margin: 0%;
@@ -18,6 +17,107 @@ body{
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
+}
+
+/*PARTE NOVA DO HEADER*/
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #000000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.283);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #000000;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #000000;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
 }
 
 /*PRIMEIRA PARTE DO HEADER*/
@@ -47,6 +147,9 @@ header > .cabeçalho{
     justify-content: space-between ;
     align-items: center;
 }
+header > .cabeçalho > span{
+    background-color: brown;
+}
 header > .cabeçalho > h1{
     margin-left: 12%;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.283);
@@ -61,7 +164,6 @@ header > .cabeçalho > menu > ul{
     flex-flow: row nowrap;
     align-items: center;
 }
-
 li{
     list-style: none;
 }
@@ -77,13 +179,11 @@ li > a:hover{
     color: var(--COLORHOVER);
     font-size: 20px;
 }
-
 /*PRIMEIRA PARTE DO CABEÇALHO*/
 header > .cabeçalho > menu > .cabeçalho-meio{
     display: flex;
     margin-right: 10%;
 }
-
 /*SEGUNDA PARTE DO CABEÇALHO*/
 header > .cabeçalho > menu >  .cabeçalho-login{
     display: flex;
@@ -122,7 +222,6 @@ main{
     flex-flow: column nowrap;
     
 }
-
 /*PARTE CAIXA1*/
 .caixa1{
     width: 100%;
@@ -183,7 +282,6 @@ main{
     height: 600px;
     margin-left: 12%;
 }
-
 /*PARTE CAIXA2*/
 .caixa2{
     width: 100%;
@@ -191,14 +289,15 @@ main{
     justify-content: center;
 }
 .caixa2 > section{
-    width: 83%;
+    width: 86%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
 }
 .caixa2 > section > a{
     margin: 20px ;   
-}.caixa2 > section > a:hover{
+}
+.caixa2 > section > a:hover{
     margin: 20px ;   
     margin-top: 10px;
     transition: 0.3s;
@@ -208,7 +307,22 @@ main{
     height: 30px;
     
 }
-
+/*PARTE PARA TABLET*/
+@media (max-width:1440px){
+    .caixa2 > section > .tablea{
+        width: 0%;
+        height: 0%;
+        margin: 0px;   
+    }
+}
+/*PARTE PARA CELULAR*/
+@media (max-width:680px){
+    .caixa2 > section > .celular{
+        width: 0%;
+        height: 0%;
+        margin: 0px;   
+    }
+}
 /*PARTE CAIXA3*/
 .caixa3{
     width: 100%;
@@ -248,7 +362,6 @@ main{
     font-size: 2=px;
     color: var(--COLORHOVER);
 }
-
 /*PARTE CAIXA-4*/
 .caixa4{
     width: 100%;
@@ -295,7 +408,6 @@ main{
     font-size: 29px;
     color: var(--COLORHOVER);
 }
-
 /*FOOTER PARTE FINAL DO SITE*/
 footer{
     background-color: black;
@@ -320,11 +432,8 @@ footer > section > a:hover{
     color: var(--COLORHOVER);
     text-decoration: underline,;
 }
-
-
 /*TELA PARA TABLET MEDIA*/    
 @media(max-width:1440px){
-
     /*PARTE CAIXA1*/
 .caixa1{
     width: 100%;
@@ -340,7 +449,6 @@ footer > section > a:hover{
     text-align: left;
     padding-right: 10%;
 }
-
 .caixa1 > #sub-caixa1 > h1{
     font-size: 3.3em;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.166);
@@ -350,7 +458,6 @@ footer > section > a:hover{
     color: #5B5545;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.166);
 }
-
 /*SEGUNDA PARTE DA PRIMEIRA CAIXA*/
 .caixa1 > #sub-caixa2{
     width: 100%;
@@ -362,7 +469,6 @@ footer > section > a:hover{
     margin-left: 0%;
     margin-left: 10%;
 }
-
 /*PARTE CAIXA3*/
 .caixa3{
     width: 100%;
@@ -383,7 +489,6 @@ footer > section > a:hover{
     height: 50%;
     margin: 30px;
 }
-
 /*PARTE CAIXA-4*/
 .caixa4{
     width: 100%;
@@ -413,7 +518,6 @@ footer > section > a:hover{
     text-align: left;
     justify-content: center;
 }
-
 /*FOOTER PARTE FINAL DO SITE*/
 footer{
     background-color: black;
@@ -427,5 +531,4 @@ footer{
 footer > section{
     margin: 10px;
 }
-
 }
