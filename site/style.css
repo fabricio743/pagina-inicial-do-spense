@@ -18,10 +18,25 @@ body{
     display: flex;
     flex-flow: column nowrap;
 }
-
+/*PRIMEIRA PARTE DO HEADER*/
+.anuncio{
+    width: 100%;
+    height: 30%;
+    text-align: center ;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.anuncio > p{
+    margin: 10px;
+}
+/*TOPO DO SITE*/
+header{
+    background-color: var(--COLORFUNDO);
+}
 /*PARTE NOVA DO HEADER*/
 .nav-bar {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 1.5rem 6rem;
 }
@@ -57,17 +72,32 @@ body{
     color: #000000;
     font-weight: 400;
 }
+li > a:hover{
+    color: var(--COLORHOVER);
+    font-size: 20px;
+}
+.login-button > #buttonplay{
+    border: none;
+    padding: 10px 15px;
+}
 
-.login-button button {
+.login-button #buttonplay a {
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.login-button > #buttonget {
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     background-color: #000000;
 }
 
-.login-button button a {
+.login-button #buttonget a {
     text-decoration: none;
-    color: #fff;
+    color:white;
     font-weight: 500;
     font-size: 1.1rem;
 }
@@ -80,8 +110,9 @@ body{
     display: none;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 845px) {
     .nav-bar {
+        align-items: center;
         padding: 1.5rem 4rem;
     }
     .nav-item {
@@ -95,14 +126,14 @@ body{
     }
     .mobile-menu-icon button {
         background-color: transparent;
-        border: none;
+        border: solid rgba(0, 0, 0, 0.137);
         cursor: pointer;
     }
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
+        padding: 0%;
         text-align: center;
-        padding-bottom: 1rem;
     }
     .mobile-menu .nav-item {
         display: block;
@@ -118,100 +149,6 @@ body{
     .open {
         display: block;
     }
-}
-
-/*PRIMEIRA PARTE DO HEADER*/
-.anuncio{
-    width: 100%;
-    height: 30%;
-    text-align: center ;
-    color: white;
-    background-color: rgb(0, 0, 0);
-}
-.anuncio > p{
-    margin: 10px;
-}
-/*TOPO DO SITE*/
-header{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-flow: column nowrap;
-    background-color: var(--COLORFUNDO);
-}
-/*SEGUNDA PARTE DO HEADER*/
-header > .cabeçalho{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: space-between ;
-    align-items: center;
-}
-header > .cabeçalho > span{
-    background-color: brown;
-}
-header > .cabeçalho > h1{
-    margin-left: 12%;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.283);
-}
-header > .cabeçalho > menu{
-    display: flex;
-    width: 65vw;
-    justify-content:space-around ;
-}
-header > .cabeçalho > menu > ul{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-li{
-    list-style: none;
-}
-li > a{
-    display: block;
-    color: black;
-    font-size: 22px;
-    margin: 10px;
-    text-decoration: none;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.283);
-}
-li > a:hover{
-    color: var(--COLORHOVER);
-    font-size: 20px;
-}
-/*PRIMEIRA PARTE DO CABEÇALHO*/
-header > .cabeçalho > menu > .cabeçalho-meio{
-    display: flex;
-    margin-right: 10%;
-}
-/*SEGUNDA PARTE DO CABEÇALHO*/
-header > .cabeçalho > menu >  .cabeçalho-login{
-    display: flex;
-    margin-right: 10%;
-}
-header > .cabeçalho > menu >  .cabeçalho-login> a{
-    color: black;
-    margin: 5px;
-    font-size: 22px;
-    text-decoration: none;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.283);
-}
-header > .cabeçalho > menu > .cabeçalho-login > a:hover{
-    color: var(--COLORHOVER);
-}
-/*BOTÃO DE STARTED*/
-header > .cabeçalho > menu > .cabeçalho-login > li > a#getstart{
-    width: 120px;
-    color: white;
-    padding: 18px;
-    border-radius: 5%;
-    text-align: center;
-    background-color: black;
-}
-header > .cabeçalho > menu > .cabeçalho-login > li > a#getstart:hover{
-    color: white;
-    font-size: 22px;
-    background-color: rgba(103, 103, 103, 0.547);
 }
 /*938*/
 /*PRIMEIRA PARTE DO CONTEUDO DO SITE*/
