@@ -40,32 +40,26 @@ header{
     justify-content: space-between;
     padding: 1.5rem 6rem;
 }
-
 .logo {
     display: flex;
     align-items: center;
 }
-
 .logo h1 {
     color: #000000;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.283);
 }
-
 .nav-list {
     display: flex;
     align-items: center;
 }
-
 .nav-list ul {
     display: flex;
     justify-content: center;
     list-style: none;
 }
-
 .nav-item {
     margin: 0 15px;
 }
-
 .nav-link {
     text-decoration: none;
     font-size: 1.15rem;
@@ -80,36 +74,30 @@ li > a:hover{
     border: none;
     padding: 10px 15px;
 }
-
 .login-button #buttonplay a {
     text-decoration: none;
     color:black;
     font-weight: 500;
     font-size: 1.1rem;
 }
-
 .login-button > #buttonget {
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     background-color: #000000;
 }
-
 .login-button #buttonget a {
     text-decoration: none;
     color:white;
     font-weight: 500;
     font-size: 1.1rem;
 }
-
 .mobile-menu-icon {
     display: none;
 }
-
 .mobile-menu {
     display: none;
 }
-
 @media screen and (max-width: 845px) {
     .nav-bar {
         align-items: center;
@@ -263,14 +251,14 @@ main{
 /*PARTE CAIXA3*/
 .caixa3{
     width: 100%;
-    height: 550px;
+    min-height:100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .caixa3 > .subcaixa3{
     width: 86%;
-    height: 100%;
+    min-height: 650px;
     display: flex;
     align-items: center;
     background-image: url(img/Phone\ Mockup\ \(Desktop\).png);
@@ -409,12 +397,11 @@ footer > section > a:hover{
 /*PARTE CAIXA3*/
 .caixa3{
     width: 100%;
-    height: 750px;
+    height: 100%;
     display: flex;
 }
 .caixa3 > .subcaixa3{
     width: 86%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: baseline;
