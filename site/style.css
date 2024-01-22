@@ -205,7 +205,7 @@ main{
 .caixa1 > #sub-caixa2 > picture > img{
     width: 75%;
     height: 600px;
-    margin-left: 12%;
+    margin-left: 12%;    
 }
 /*PARTE CAIXA2*/
 .caixa2{
@@ -297,12 +297,12 @@ main{
     }
     .caixa3 > .subcaixa3{
         width: 86%;
-        min-height: 900px;
+        min-height: 990px;
         display: flex;
         align-items: center;
         background-image: url(img/Phone\ Mockup\ \(Desktop\).png);
         background-repeat: no-repeat;
-        background-position: right bottom;
+        background-position: center bottom;
         background-color: #5757571b;
     }
     .caixa3 > .subcaixa3 > .subcaixa4{
