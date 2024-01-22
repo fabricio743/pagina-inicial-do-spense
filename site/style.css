@@ -68,7 +68,6 @@ header{
 }
 li > a:hover{
     color: var(--COLORHOVER);
-    font-size: 20px;
 }
 .login-button > #buttonplay{
     border: none;
@@ -114,7 +113,8 @@ li > a:hover{
     }
     .mobile-menu-icon button {
         background-color: transparent;
-        border: solid rgba(0, 0, 0, 0.137);
+        border-radius: 50%;
+        border: solid rgb(0, 0, 0);
         cursor: pointer;
     }
     .mobile-menu ul {
@@ -206,6 +206,11 @@ main{
     width: 75%;
     height: 600px;
     margin-left: 12%;    
+}
+@media (max-width:680px){
+    .caixa1 > #sub-caixa2{
+        display: none;
+    }
 }
 /*PARTE CAIXA2*/
 .caixa2{
